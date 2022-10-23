@@ -1,0 +1,142 @@
+:root {
+    --cor-background: rgb(0, 139, 203);
+    --cor-celulas: rgb(1, 183, 21);
+    --cor-detalhes: rgb(0, 0, 0);
+    --cor-titulo: white;
+    --cor-bordas: gray;
+}
+body {
+    background-color: var(--cor-background);
+    margin: 0;
+}
+
+#tudo {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#header {
+    width: 100%;
+    height: 80px;
+    margin: 0;
+
+    position: fixed;
+    top: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--cor-detalhes);
+    border-bottom: 5px double var(--cor-bordas);
+}
+
+#header h1 {
+    width: 100%;
+    height: 50px;
+    font-size: 50px;
+    position: relative;
+    text-align: center;
+    color: var(--cor-titulo);
+    margin: 0px;
+    /*-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--cor-bordas);*/
+}
+
+#header p {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    color: var(--cor-titulo);
+    /*-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--cor-bordas);*/
+}
+
+#main {
+    width: 100%;
+    height: 80%;
+    background-color: var(--cor-background);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin-top: 80px;
+}
+
+#main button {
+    color: var(--cor-celulas);
+    cursor: pointer;
+    transition: 0.2s;
+    margin: -4px 0px; 
+    border: 0;
+}
+
+#main table {
+    margin: 0;
+    border-collapse: collapse;
+}
+
+
+#botoes {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--cor-detalhes);
+
+    border-top: 5px double var(--cor-bordas);
+}
+
+#botoes button {
+    width: 100px;
+    font-size: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    border-color: var(--cor-bordas);
+}
+
+#starter {
+    font-size: 20px !important;
+    height: 50px;
+    background-color: rgb(1, 183, 21);
+}
+
+.btnQnt {
+    width: 30px !important;
+}
+
+#amostras {
+    width: 200px;
+    height: 300px;
+    position:absolute;
+    border:1px solid black;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+#amostras button {
+    width: 100%;
+    margin-top: 10px;
+    width: 100px;
+    font-size: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    border-color: var(--cor-bordas);
+}

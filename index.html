@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>O Jogo da Vida</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+
+<body>
+    <div id="tudo">
+        <div id="header">
+            <h1>
+                O Jogo da Vida
+            </h1>
+            <p>por John Conway</p>
+        </div>
+
+        <div id="main"> 
+        </div>
+
+        <div id="botoes">
+            <button class="btnQnt" onclick="qntCelulas(1)">+</button>
+            <button onclick="desativarBotoes()">Limpar</button>
+            <button onclick="showAmostra()">Amostras</button>
+            <button id="starter" onclick="start()">Start!</button>
+            <button onclick="gravar()">Copiar</button>
+            <button onclick="amostra(6)">Colar</button>
+            <button class="btnQnt" onclick="qntCelulas(-1)">-</button>  
+        </div>
+
+        <div id="amostras">
+            <button onclick="amostra(1)">101</button>
+            <button onclick="amostra(2)">Cross</button>
+            <button onclick="amostra(3)">Clock II</button>
+            <button onclick="amostra(4)">XPentomino</button>
+            <button onclick="amostra(5)">Worker Bee</button>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
